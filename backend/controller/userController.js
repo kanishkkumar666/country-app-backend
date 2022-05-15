@@ -5,10 +5,6 @@ import User from "../models/userModel.js";
 import generateToken from "../utils/generateToken.js";
 
 const authUser = asyncHandler(async (request, response) => {
-  request.setHeader("Access-Control-Allow-Origin", "*");
-  request.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
-  request.setHeader("Access-Control-Allow-Headers", "Content-Type");
-  request.setHeader("Access-Control-Allow-Credentials", true);
   response.setHeader("Access-Control-Allow-Origin", "*");
   response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
   response.setHeader("Access-Control-Allow-Headers", "Content-Type");
@@ -31,10 +27,6 @@ const authUser = asyncHandler(async (request, response) => {
 });
 
 const signup = asyncHandler(async (request, response) => {
-  request.setHeader("Access-Control-Allow-Origin", "*");
-  request.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
-  request.setHeader("Access-Control-Allow-Headers", "Content-Type");
-  request.setHeader("Access-Control-Allow-Credentials", true);
   response.setHeader("Access-Control-Allow-Origin", "*");
   response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
   response.setHeader("Access-Control-Allow-Headers", "Content-Type");
@@ -64,10 +56,6 @@ const signup = asyncHandler(async (request, response) => {
 });
 
 const getUserProfile = asyncHandler(async (request, response) => {
-  request.setHeader("Access-Control-Allow-Origin", "*");
-  request.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
-  request.setHeader("Access-Control-Allow-Headers", "Content-Type");
-  request.setHeader("Access-Control-Allow-Credentials", true);
   response.setHeader("Access-Control-Allow-Origin", "*");
   response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
   response.setHeader("Access-Control-Allow-Headers", "Content-Type");
@@ -88,10 +76,6 @@ const getUserProfile = asyncHandler(async (request, response) => {
 });
 
 const updateUserProfile = asyncHandler(async (request, response) => {
-  request.setHeader("Access-Control-Allow-Origin", "*");
-  request.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
-  request.setHeader("Access-Control-Allow-Headers", "Content-Type");
-  request.setHeader("Access-Control-Allow-Credentials", true);
   response.setHeader("Access-Control-Allow-Origin", "*");
   response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
   response.setHeader("Access-Control-Allow-Headers", "Content-Type");
@@ -121,10 +105,6 @@ const updateUserProfile = asyncHandler(async (request, response) => {
 });
 
 const deleteUser = asyncHandler(async (request, response) => {
-  request.setHeader("Access-Control-Allow-Origin", "*");
-  request.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
-  request.setHeader("Access-Control-Allow-Headers", "Content-Type");
-  request.setHeader("Access-Control-Allow-Credentials", true);
   response.setHeader("Access-Control-Allow-Origin", "*");
   response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
   response.setHeader("Access-Control-Allow-Headers", "Content-Type");
@@ -141,10 +121,6 @@ const deleteUser = asyncHandler(async (request, response) => {
 });
 
 const getUsers = asyncHandler(async (request, response) => {
-  request.setHeader("Access-Control-Allow-Origin", "*");
-  request.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
-  request.setHeader("Access-Control-Allow-Headers", "Content-Type");
-  request.setHeader("Access-Control-Allow-Credentials", true);
   response.setHeader("Access-Control-Allow-Origin", "*");
   response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
   response.setHeader("Access-Control-Allow-Headers", "Content-Type");

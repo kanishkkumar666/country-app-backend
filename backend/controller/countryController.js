@@ -4,10 +4,6 @@ import CountryModel from "../models/countryModel.js";
 // import ConnectDB from "../connection/connectDB.js";
 
 const getCountry = asyncHandler(async (request, response) => {
-  request.setHeader("Access-Control-Allow-Origin", "*");
-  request.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
-  request.setHeader("Access-Control-Allow-Headers", "Content-Type");
-  request.setHeader("Access-Control-Allow-Credentials", true);
   response.setHeader("Access-Control-Allow-Origin", "*");
   response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
   response.setHeader("Access-Control-Allow-Headers", "Content-Type");
@@ -24,10 +20,6 @@ const getCountry = asyncHandler(async (request, response) => {
 
 const getCountryById = asyncHandler(async (request, response) => {
   // ConnectDB();
-  request.setHeader("Access-Control-Allow-Origin", "*");
-  request.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
-  request.setHeader("Access-Control-Allow-Headers", "Content-Type");
-  request.setHeader("Access-Control-Allow-Credentials", true);
   response.setHeader("Access-Control-Allow-Origin", "*");
   response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
   response.setHeader("Access-Control-Allow-Headers", "Content-Type");
@@ -43,10 +35,6 @@ const getCountryById = asyncHandler(async (request, response) => {
 
 const getCountryByContinent = asyncHandler(async (request, response) => {
   // ConnectDB();
-  request.setHeader("Access-Control-Allow-Origin", "*");
-  request.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
-  request.setHeader("Access-Control-Allow-Headers", "Content-Type");
-  request.setHeader("Access-Control-Allow-Credentials", true);
   response.setHeader("Access-Control-Allow-Origin", "*");
   response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
   response.setHeader("Access-Control-Allow-Headers", "Content-Type");
@@ -64,10 +52,6 @@ const getCountryByContinent = asyncHandler(async (request, response) => {
 
 const getCountryByName = asyncHandler(async (request, response) => {
   // ConnectDB();
-  request.setHeader("Access-Control-Allow-Origin", "*");
-  request.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
-  request.setHeader("Access-Control-Allow-Headers", "Content-Type");
-  request.setHeader("Access-Control-Allow-Credentials", true);
   response.setHeader("Access-Control-Allow-Origin", "*");
   response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
   response.setHeader("Access-Control-Allow-Headers", "Content-Type");
@@ -83,10 +67,6 @@ const getCountryByName = asyncHandler(async (request, response) => {
 
 const deleteCountry = asyncHandler(async (request, response) => {
   // ConnectDB();
-  request.setHeader("Access-Control-Allow-Origin", "*");
-  request.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
-  request.setHeader("Access-Control-Allow-Headers", "Content-Type");
-  request.setHeader("Access-Control-Allow-Credentials", true);
   response.setHeader("Access-Control-Allow-Origin", "*");
   response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
   response.setHeader("Access-Control-Allow-Headers", "Content-Type");
@@ -103,10 +83,6 @@ const deleteCountry = asyncHandler(async (request, response) => {
 
 const createCountry = asyncHandler(async (request, response) => {
   // ConnectDB();
-  request.setHeader("Access-Control-Allow-Origin", "*");
-  request.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
-  request.setHeader("Access-Control-Allow-Headers", "Content-Type");
-  request.setHeader("Access-Control-Allow-Credentials", true);
   response.setHeader("Access-Control-Allow-Origin", "*");
   response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
   response.setHeader("Access-Control-Allow-Headers", "Content-Type");
@@ -128,10 +104,6 @@ const createCountry = asyncHandler(async (request, response) => {
 
 const updateCountry = asyncHandler(async (request, response) => {
   // ConnectDB();
-  request.setHeader("Access-Control-Allow-Origin", "*");
-  request.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
-  request.setHeader("Access-Control-Allow-Headers", "Content-Type");
-  request.setHeader("Access-Control-Allow-Credentials", true);
   response.setHeader("Access-Control-Allow-Origin", "*");
   response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
   response.setHeader("Access-Control-Allow-Headers", "Content-Type");

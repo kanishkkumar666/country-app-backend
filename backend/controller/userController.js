@@ -5,7 +5,7 @@ import User from "../models/userModel.js";
 import generateToken from "../utils/generateToken.js";
 
 const authUser = asyncHandler(async (request, response) => {
-  response.setHeader("Access-Control-Allow-Origin", "*");
+  response.setHeader("Access-Control-Allow-Origin", "https://country-app-frontend.herokuapp.com");
   response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
   response.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
   response.setHeader("Access-Control-Allow-Credentials", true);
@@ -27,7 +27,7 @@ const authUser = asyncHandler(async (request, response) => {
 });
 
 const signup = asyncHandler(async (request, response) => {
-  response.setHeader("Access-Control-Allow-Origin", "*");
+  response.setHeader("Access-Control-Allow-Origin", "https://country-app-frontend.herokuapp.com");
   response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
   response.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
   response.setHeader("Access-Control-Allow-Credentials", true);
@@ -56,7 +56,7 @@ const signup = asyncHandler(async (request, response) => {
 });
 
 const getUserProfile = asyncHandler(async (request, response) => {
-  response.setHeader("Access-Control-Allow-Origin", "*");
+  response.setHeader("Access-Control-Allow-Origin", "https://country-app-frontend.herokuapp.com");
   response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
   response.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
   response.setHeader("Access-Control-Allow-Credentials", true);
@@ -76,7 +76,7 @@ const getUserProfile = asyncHandler(async (request, response) => {
 });
 
 const updateUserProfile = asyncHandler(async (request, response) => {
-  response.setHeader("Access-Control-Allow-Origin", "*");
+  response.setHeader("Access-Control-Allow-Origin", "https://country-app-frontend.herokuapp.com");
   response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
   response.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
   response.setHeader("Access-Control-Allow-Credentials", true);
@@ -105,7 +105,7 @@ const updateUserProfile = asyncHandler(async (request, response) => {
 });
 
 const deleteUser = asyncHandler(async (request, response) => {
-  response.setHeader("Access-Control-Allow-Origin", "*");
+  response.setHeader("Access-Control-Allow-Origin", "https://country-app-frontend.herokuapp.com");
   response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
   response.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
   response.setHeader("Access-Control-Allow-Credentials", true);
@@ -121,7 +121,7 @@ const deleteUser = asyncHandler(async (request, response) => {
 });
 
 const getUsers = asyncHandler(async (request, response) => {
-  response.setHeader("Access-Control-Allow-Origin", "*");
+  response.setHeader("Access-Control-Allow-Origin", "https://country-app-frontend.herokuapp.com");
   response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
   response.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
   response.setHeader("Access-Control-Allow-Credentials", true);

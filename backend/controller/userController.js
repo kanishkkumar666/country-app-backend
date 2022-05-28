@@ -7,7 +7,7 @@ import generateToken from "../utils/generateToken.js";
 const authUser = asyncHandler(async (request, response) => {
   response.setHeader("Access-Control-Allow-Origin", "*");
   response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
-  response.setHeader("Access-Control-Allow-Headers", request.header('Access-Control-Request-Headers'));
+  response.setHeader("Access-Control-Allow-Headers", "Content-Type");
   response.setHeader("Access-Control-Allow-Credentials", true);
   const { email, password } = request.body;
   const user = await User.findOne({ email });

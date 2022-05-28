@@ -1,6 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import "colors";
+import cors from "cors";
 // import path from "path";
 
 import connectDB from "./connection/connectDB.js";
@@ -13,6 +14,7 @@ dotenv.config();
 connectDB();
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 app.get("/", (request, response) => {
   response.send("Api is running...");

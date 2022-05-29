@@ -4,10 +4,6 @@ import CountryModel from "../models/countryModel.js";
 // import ConnectDB from "../connection/connectDB.js";
 
 const getCountry = asyncHandler(async (request, response) => {
-  // response.setHeader("Access-Control-Allow-Origin", "*");
-  // response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
-  // response.setHeader("Access-Control-Allow-Headers", "Content-Type");
-  // response.setHeader("Access-Control-Allow-Credentials", true);
   try {
     // ConnectDB();
     const country = await CountryModel.find({}).sort({ name: 1 });
@@ -20,10 +16,6 @@ const getCountry = asyncHandler(async (request, response) => {
 
 const getCountryById = asyncHandler(async (request, response) => {
   // ConnectDB();
-  // response.setHeader("Access-Control-Allow-Origin", "*");
-  // response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
-  // response.setHeader("Access-Control-Allow-Headers", "Content-Type");
-  // response.setHeader("Access-Control-Allow-Credentials", true);
   const country = await CountryModel.findById(request.params.id);
   if (country) {
     response.json(country);
@@ -35,10 +27,6 @@ const getCountryById = asyncHandler(async (request, response) => {
 
 const getCountryByContinent = asyncHandler(async (request, response) => {
   // ConnectDB();
-  // response.setHeader("Access-Control-Allow-Origin", "*");
-  // response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
-  // response.setHeader("Access-Control-Allow-Headers", "Content-Type");
-  // response.setHeader("Access-Control-Allow-Credentials", true);
   const continents = await CountryModel.find({
     continent: request.params.continent,
   }).sort({ name: 1 });
@@ -52,10 +40,6 @@ const getCountryByContinent = asyncHandler(async (request, response) => {
 
 const getCountryByName = asyncHandler(async (request, response) => {
   // ConnectDB();
-  // response.setHeader("Access-Control-Allow-Origin", "*");
-  // response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
-  // response.setHeader("Access-Control-Allow-Headers", "Content-Type");
-  // response.setHeader("Access-Control-Allow-Credentials", true);
   const name = await CountryModel.find({ name: request.params.name });
   if (name) {
     response.json(name);
@@ -67,10 +51,6 @@ const getCountryByName = asyncHandler(async (request, response) => {
 
 const deleteCountry = asyncHandler(async (request, response) => {
   // ConnectDB();
-  // response.setHeader("Access-Control-Allow-Origin", "*");
-  // response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
-  // response.setHeader("Access-Control-Allow-Headers", "Content-Type");
-  // response.setHeader("Access-Control-Allow-Credentials", true);
   const country = await CountryModel.findById(request.params.id);
   if (country) {
     await country.remove();
@@ -83,10 +63,6 @@ const deleteCountry = asyncHandler(async (request, response) => {
 
 const createCountry = asyncHandler(async (request, response) => {
   // ConnectDB();
-  // response.setHeader("Access-Control-Allow-Origin", "*");
-  // response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
-  // response.setHeader("Access-Control-Allow-Headers", "Content-Type");
-  // response.setHeader("Access-Control-Allow-Credentials", true);
   const country = new CountryModel({
     name: "Sample name",
     continent: 0,
@@ -104,10 +80,6 @@ const createCountry = asyncHandler(async (request, response) => {
 
 const updateCountry = asyncHandler(async (request, response) => {
   // ConnectDB();
-  // response.setHeader("Access-Control-Allow-Origin", "*");
-  // response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
-  // response.setHeader("Access-Control-Allow-Headers", "Content-Type");
-  // response.setHeader("Access-Control-Allow-Credentials", true);
   const { name, continent, description, image, rating, numReviews } =
     request.body;
 

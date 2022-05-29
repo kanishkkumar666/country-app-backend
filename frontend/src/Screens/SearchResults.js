@@ -4,6 +4,7 @@ import axios from "axios";
 
 import Countrys from "../Components/Country";
 import Message from "../Components/Message";
+import { baseRouter } from "../Config";
 
 const SearchResults = ({ match }) => {
   const [countrys, setCountrys] = useState([]);
@@ -11,7 +12,7 @@ const SearchResults = ({ match }) => {
 
   useEffect(() => {
     axios
-      .get(`/api/country/name/${match.params.name}`)
+      .get(`${baseRouter}/api/country/name/${match.params.name}`)
       .then(({ data }) => {
         setCountrys(data);
       })

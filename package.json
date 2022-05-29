@@ -13,7 +13,6 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "data:import": "node backend/seeder",
     "data:destroy": "node backend/seeder -d",
-    "build": "jsc",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run server"
   },
   "author": "Kanishk Kumar",
